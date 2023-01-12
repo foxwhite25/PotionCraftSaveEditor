@@ -40,7 +40,7 @@ fn main() {
         }
         4 => {
             if &args[1] != "edit" {
-                panic!("Invalid arguments");
+                panic!("Invalid command");
             }
             let input = &args[2];
             let output = &args[3];
@@ -62,7 +62,7 @@ fn main() {
             fs::write(output, save).unwrap();
         }
         _ => {
-            panic!("Invalid arguments");
+            panic!("Invalid command");
         }
     }
 }
